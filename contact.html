@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon -->
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main>
+      <div class=" pb-5 position-relative">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div>
+              <a class="navbar-brand bg-success" href="#">
+                <div
+                  class="nav-left d-flex justify-content-center align-items-center"
+                >
+                  <div class="mx-3 mt-1">
+                    <img
+                      class="d-inline-block"
+                      src="https://routeweather.netlify.app/images/logo.png"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h1 class="m-0 fw-bold fs-6 text-white">Weather</h1>
+                    <span class="text-white">tagline goes here </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <button
+              class="navbar-toggler text-white bg-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="ms-auto mb-2 mb-lg-0">
+                <li class="nav-item mx-1 d-lg-inline-block my-4">
+                  <a id="contactToHome"
+                    class="text-white text-decoration-none "
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item mx-1 d-lg-inline-block my-4">
+                  <a
+                    class="text-white text-decoration-none"
+                    aria-current="page"
+                    href="#"
+                    >News</a
+                  >
+                </li>
+                <li class="nav-item mx-1 d-lg-inline-block my-4">
+                  <a
+                    class="text-white text-decoration-none"
+                    aria-current="page"
+                    href="#"
+                    >Live cameras</a
+                  >
+                </li>
+                <li class="nav-item mx-1 d-lg-inline-block my-4">
+                  <a
+                    class="text-white text-decoration-none"
+                    aria-current="page"
+                    href="#"
+                    >Photos</a
+                  >
+                </li>
+                <li class="nav-item mx-1 d-lg-inline-block my-4">
+                  <a id="homeToContact"
+                    class="text-white text-decoration-none active"
+                    aria-current="page"
+                    href="#"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+        <div id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10">
+                <div
+                  class="inner py-4 rounded-5 my-4"
+                  style="background-color: #262936"
+                >
+                  <span class="text-white fw-lighter ms-3 text-opacity-50 px-2"
+                    >Home</span
+                  >
+                  <span class="text-white fw-lighter fs-6 text-opacity-25"
+                    ><i class="fa fa-arrow-right"></i
+                  ></span>
+                  <span class="text-white fw-lighter text-opacity-75 px-2"
+                    >contact</span
+                  >
+                </div>
+              </div>
+              <div class="col-lg-10">
+                <div class="row py-5 d-flex justify-content-end">
+                  <div
+                    class="col-md-5 p-0"
+                    style="background-color: #262936; border-radius: 1rem"
+                  >
+                    <div class="contact-details w-100">
+                      <iframe
+                        class="w-100 gx-0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55027.12106816144!2d31.22344116502882!3d30.458912523606077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145875f6592ee989%3A0xa0f7a3872335c0ce!2z2KjZhtmH2KfYjCDZgtiz2YUg2KjZhtmH2KfYjCDYqNmG2YfYp9iMINmF2K3Yp9mB2LjYqSDYp9mE2YLZhNmK2YjYqNmK2Kk!"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                      ></iframe>
+                      <div class="contact-info px-3 py-2">
+                        <p class="text-white py-2">
+                          <i
+                            class="fa fa-location-dot px-1 text-info d-inline"
+                          ></i>
+                          Company Name INC. <br />
+                          2803 Avenue Street, Los Angeles
+                        </p>
+                        <a
+                          class="text-white text-decoration-none fw-lighter"
+                          style="font-size: 0.8rem"
+                          href="#"
+                          ><i class="fa fa-phone text-info px-1"></i>+1 800 314
+                          235</a
+                        >
+                        <a
+                          class="text-white text-decoration-none px-4 fw-lighter"
+                          style="font-size: 0.8rem"
+                          href="#"
+                          ><i class="fa fa-mail-bulk text-info px-1"></i
+                          >contact@companyname.com</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 ms-5">
+                    <h4 class="text-white my-3">Contact us</h4>
+                    <p class="fw-lighter text-white my-2">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Commodi consectetur inventore ducimus, facilis, numquam id
+                      soluta omnis eius recusandae nesciunt vero repellat harum
+                      cum. Nisi facilis odit hic, ipsum sed!
+                    </p>
+                    <div class="inputss mt-4 position-relative pb-5">
+                      <input type="text" class="form-control rounded-5 d-inline mx-1 my-2 bg-body-tertiary shadow-none" style="width: 45%;background-color: #1e202b !important;" placeholder="Your Name...">
+                      <input type="text" class="form-control rounded-5 d-inline mx-1 my-2 bg-body-tertiary shadow-none" style="width: 45%;background-color: #1e202b !important;" placeholder="Email Addresss...">
+                      <input type="text" class="form-control rounded-5 d-inline mx-1 my-2 bg-body-tertiary shadow-none" style="width: 45%;background-color: #1e202b !important;" placeholder="company Name...">
+                      <input type="text" class="form-control rounded-5 d-inline mx-1 my-2 bg-body-tertiary shadow-none" style="width: 45%;background-color: #1e202b !important;" placeholder="Website...">
+                      <textarea name="" id="" cols="30" rows="10" class="form-control rounded-5 d-inline mx-1 my-2 bg-body-tertiary shadow-none" style="background-color: #1e202b !important; width: 90%;" placeholder="Message..."></textarea>
+                      <button class="btn text-white rounded-5 px-3 position-absolute end-0 bottom-0 me-5" style="background-color: #009ad8;">Sumbit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer p-3">
+        <div class="container-fluid">
+          <div
+            class="row pt-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="col-lg-5 mx-2">
+              <div class="inner">
+                <div class="find-location position-relative mt-4">
+                  <input
+                    type="text"
+                    class="form-control shadow-none py-3 rounded-5 text-white w-100"
+                    placeholder="Enter your email to subscribe..."
+                  />
+                  <button
+                    class="btn btn-info text-white position-absolute top-0 end-0 me-1 mt-1 px-5 rounded-5"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 mt-4 mx-2">
+              <div class="social-links d-flex justify-content-center">
+                <div>
+                  <a
+                    href="#"
+                    class="text-decoration-none face rounded-circle text-info"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-decoration-none rounded-circle text-info"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-decoration-none rounded-circle text-info"
+                    ><i class="fa-brands fa-google-plus-g"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-decoration-none rounded-circle pinterest text-info"
+                    ><i class="fa-brands fa-pinterest-p"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-around">
+          <span class="text-white text-center py-4 fw-lighter text-opacity-75"
+            >Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved</span
+          >
+          <span></span>
+        </div>
+      </div>
+
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

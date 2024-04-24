@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon -->
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="weatearSetion pb-5 position-relative">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div>
+              <a class="navbar-brand bg-success" href="#">
+                <div
+                  class="nav-left d-flex justify-content-center align-items-center"
+                >
+                  <div class="mx-3 mt-1">
+                    <img
+                      class="d-inline-block"
+                      src="https://routeweather.netlify.app/images/logo.png"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h1 class="m-0 fw-bold fs-6 text-white">Weather</h1>
+                    <span class="text-white">tagline goes here </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <button
+              class="navbar-toggler text-white bg-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="ms-auto mb-2 mb-lg-0">
+                <li class="nav-item mx-1 d-lg-inline-block my-4">
+                  <a id="contactToHome"
+                    class="text-white text-decoration-none active"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item mx-1 d-lg-inline-block my-4">
+                  <a
+                    class="text-white text-decoration-none"
+                    aria-current="page"
+                    href="#"
+                    >News</a
+                  >
+                </li>
+                <li class="nav-item mx-1 d-lg-inline-block my-4">
+                  <a
+                    class="text-white text-decoration-none"
+                    aria-current="page"
+                    href="#"
+                    >Live cameras</a
+                  >
+                </li>
+                <li class="nav-item mx-1 d-lg-inline-block my-4">
+                  <a
+                    class="text-white text-decoration-none"
+                    aria-current="page"
+                    href="#"
+                    >Photos</a
+                  >
+                </li>
+                <li class="nav-item mx-1 d-lg-inline-block my-4">
+                  <a id="homeToContact"
+                    class="text-white text-decoration-none"
+                    aria-current="page"
+                    href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div id="home" class=" d-block">
+          <div class="container container-forecast">
+            <div class="row">
+              <div class="col-lg-10 forecast-table m-auto">
+                <div id="forecast" class="forecast-container row">
+                  <div>
+                    <div
+                      class="form row end-0 start-0 d-flex justify-content-center"
+                    >
+                      <div class="my-5">
+                        <form class="find-location position-relative my-2">
+                          <input
+                            type="text"
+                            class="form-control shadow-none py-3 rounded-5 text-white"
+                            placeholder="Find your location... "
+                          />
+                          <button
+                            class="btn btn-info text-white position-absolute mt-1 me-1 top-0 end-0 px-5 rounded-5"
+                          >
+                            Find
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!------------------------------- left of the table ----------------------------->
+
+                  <div class="col-lg-4 today forecast p-0">
+                    <div
+                      class="forecast-header d-flex justify-content-between py-3 px-3 mx-0"
+                    >
+                      <span class="day text-opacity-75 text-white"></span>
+                      <div>
+                        <span class="date text-opacity-75 text-white"></span>
+                        <span
+                          class="dayAMonth text-opacity-75 text-white"
+                        ></span>
+                      </div>
+                    </div>
+                    <div class="forecast-body p-4">
+                      <span
+                        class="city d-block fw-lighter fs-3 text-white text-opacity-50 py-3"
+                      ></span>
+                      <div class="degree d-flex justify-content-between"></div>
+                      <div
+                        class="weatherCondition text-info text-opacity-50 my-3"
+                      ></div>
+                      <span
+                        class="humidity my-2 me-2 text-white text-opacity-50"
+                      >
+                        <img class="" src="imgs/umberella.png" alt="" />
+                        <span></span>
+                      </span>
+                      <span class="winds m-2 text-white text-opacity-50">
+                        <img src="imgs/icon-wind.png" alt="" />
+                        <span></span>
+                      </span>
+                      <span class="weatherTrend m-2 text-white text-opacity-50">
+                        <img src="imgs/icon-compass.png" alt="" />
+                        <span></span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <!------------------------------- Center of the table ----------------------------->
+
+                  <div class="col-lg-4 tomorrow forecast p-0">
+                    <div class="forecast-header text-center py-3 px-3 mx-0">
+                      <span class="day text-opacity-75 text-white"></span>
+                    </div>
+                    <div class="forecast-body p-4 text-center">
+                      >
+                      <div class="degree">
+                        <span class="forecast-icon d-block my-3"
+                          ><img class="" alt="weatherapi"
+                        /></span>
+                        <span
+                          class="maxTemperature fw-bolder text-white d-block"
+                        ></span>
+                        <span
+                          class="minTemperature fs-6 fw-bolder text-white text-opacity-50"
+                        ></span>
+                      </div>
+                      <div
+                        class="weatherCondition text-info text-opacity-75 my-5"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <!------------------------------- Right of the table ----------------------------->
+
+                  <div class="col-lg-4 after-tomorrow forecast p-0">
+                    <div class="forecast-header text-center py-3 px-3 mx-0">
+                      <span class="day text-opacity-75 text-white"></span>
+                    </div>
+                    <div class="forecast-body p-4 text-center">
+                      <div class="degree">
+                        <span class="forecast-icon d-block my-3">
+                          <img alt="weatherapi" />
+                        </span>
+                        <span
+                          class="maxTemperature fw-bolder text-white d-block"
+                        ></span>
+                        <span
+                          class="minTemperature fs-6 fw-bolder text-white text-opacity-50"
+                        ></span>
+                      </div>
+                      <div
+                        class="weatherCondition text-info text-opacity-50 my-5"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer p-3">
+        <div class="container-fluid">
+          <div
+            class="row pt-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="col-lg-5 mx-2">
+              <div class="inner">
+                <div class="find-location position-relative mt-4">
+                  <input
+                    type="text"
+                    class="form-control shadow-none py-3 rounded-5 text-white w-100"
+                    placeholder="Enter your email to subscribe..."
+                  />
+                  <button
+                    class="btn btn-info text-white position-absolute top-0 end-0 me-1 mt-1 px-5 rounded-5"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 mt-4 mx-2">
+              <div class="social-links d-flex justify-content-center">
+                <div>
+                  <a
+                    href="#"
+                    class="text-decoration-none face rounded-circle text-info"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-decoration-none rounded-circle text-info"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-decoration-none rounded-circle text-info"
+                    ><i class="fa-brands fa-google-plus-g"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-decoration-none rounded-circle pinterest text-info"
+                    ><i class="fa-brands fa-pinterest-p"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-around">
+          <span class="text-white text-center py-4 fw-lighter text-opacity-75"
+            >Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved</span
+          >
+          <span></span>
+        </div>
+      </div>
+
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
